@@ -1,0 +1,26 @@
+/**Create your own store! Your store should sell one type of things,
+like clothing or bikes, whatever you want your store to specialize in. You should have a table
+for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store.
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items. **/
+
+
+
+CREATE TABLE AUTO_STORE (id INTEGER PRIMARY KEY, name TEXT , price INTEGER, stock INTEGER, aisle TEXT);
+INSERT INTO AUTO_STORE VALUES(1,"WHEEL", 10, 100, "W");
+INSERT INTO AUTO_STORE VALUES(2,"SEAT", 8, 70, "S");
+INSERT INTO AUTO_STORE VALUES(3,"RIM", 5, 150, "R");
+INSERT INTO AUTO_STORE VALUES(4,"MIRROR", 17, 50, "M");
+INSERT INTO AUTO_STORE VALUES(5,"WINDOW", 11, 60, "W");
+INSERT INTO AUTO_STORE VALUES(6,"HEAD LIGHT", 50, 115, "H");
+INSERT INTO AUTO_STORE VALUES(7,"HANDLE", 7, 200, "H");
+INSERT INTO AUTO_STORE VALUES(8,"BOOT", 15, 35, "B");
+INSERT INTO AUTO_STORE VALUES(9,"HOOD", 20, 40, "H");
+INSERT INTO AUTO_STORE VALUES(10,"STEERING", 35, 75, "S");
+INSERT INTO AUTO_STORE VALUES(11,"SEAT COVERS", 24, 290, "S");
+INSERT INTO AUTO_STORE VALUES(12,"BUMPER", 30, 119, "B");
+INSERT INTO AUTO_STORE VALUES(13,"DOOR",32, 300, "D");
+INSERT INTO AUTO_STORE VALUES(14,"CAR MAT", 8, 210, "C");
+INSERT INTO AUTO_STORE VALUES(15,"MAT CLEANER", 7, 100, "M");
+SELECT * FROM AUTO_STORE;
+
+SELECT NAME,MAX(PRICE) FROM AUTO_STORE;
